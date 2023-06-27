@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <form id="form" class="container">
+        <h1>Contact Form</h1>
+        <div class="form_control">
+            <label class="label_fw" for="name">Name:</label>
+            <input class="input_fw" type="text" id="name" placeholder="Enter your name">
+            <i class="fa fa-exclamation-circle"></i>
+            <i class="fa fa-check-circle"></i>
+            <small>Error message</small>
+        </div>
+        <div class="form_control">
+            <label class="label_fw" for="username">Username:</label>
+            <input class="input_fw" type="text" id="username" placeholder="Enter your Username">
+            <i class="fa fa-exclamation-circle"></i>
+            <i class="fa fa-check-circle"></i>
+            <small>Error message</small>
+        </div>
+        <div class="form_control">
+            <label class="label_fw" for="password">Password:</label>
+            <input class="input_fw" type="password" id="password" placeholder="Enter your Password">
+            <i class="fa fa-exclamation-circle"></i>
+            <i class="fa fa-check-circle"></i>
+            <small>Error message</small>
+        </div>
+        <div class="form_control">
+            <label class="label_fw" for="password2">Re-type Password:</label>
+            <input class="input_fw" type="password" id="password2" placeholder="Enter your Password">
+            <i class="fa fa-exclamation-circle"></i>
+            <i class="fa fa-check-circle"></i>
+            <small>Error message</small>
+        </div>
+        <div>
+            <label class="label_fw" for="gender" >Gender:</label>
+            <input  name="gender" type="radio">
+            <label for="male" class="male_radio">Male</label>
+            <input class="female_radio" name="gender" type="radio">
+            <label for="female">Female</label>
+        </div>
+
+        <div>
+            <label for="skills" class="label_fw">Techie Skills:</label>
+            <input type="checkbox" name="skills">
+            <label for="skills" class="male_radio">HTML</label>
+            <input type="checkbox" name="skills">
+            <label for="skills" class="male_radio">CSS</label>
+            <input type="checkbox" name="skills">
+            <label for="skills" >JavaScript</label>
+        </div>
+
+        <div class="form_control">
+            <label for="email" class="label_fw">Email:</label>
+            <input class="input_fw" type="text" id="email" placeholder="abcd@efgh.com">
+            <i class="fa fa-exclamation-circle"></i>
+            <i class="fa fa-check-circle"></i>
+            <small>Error message</small>
+        </div>
+
+        <div class="form_control">
+            <label for="email" class="label_fw">Phone Number:</label>
+            <input class="input_fw" type="tel" id="phoneNumber" placeholder="+234 803 345 9999">
+            <i class="fa fa-exclamation-circle"></i>
+            <i class="fa fa-check-circle"></i>
+            <small>Error message</small>
+        </div>
+
+        <div>
+            <label class="label_fw" for="name">College:</label>
+            <select class="input_fw" name="college" id="college">
+                <option value="college">Select a College</option>
+                <option value="college">Frontend</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="" class="label_fw"></label>
+            <!-- <input class="input_fw" id="submit" type="submit" value="submit"> -->
+            <button>submit</button>
+        </div>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
